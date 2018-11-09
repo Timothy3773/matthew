@@ -1,0 +1,32 @@
+# ==============================
+# Files
+# ==============================
+
+# NPM
+package-lock.json
+npm-debug.log
+
+# Yarn
+yarn.lock
+yarn-debug.log
+yarn-error.log
+
+# ==============================
+# Directories
+# ==============================
+
+# Dependencies
+node_modules/
+
+# NPM
+.npm/
+
+# Temp
+temp/
+
+# Microsoft VS Code
+.vscode/
+
+# Configuration
+*.sqlite
+src/config/
