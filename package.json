@@ -2,17 +2,16 @@
   "name": "matthew",
   "description": "Because who doesn't like counting?",
   "version": "1.0.0",
+  "author": "Timothy3773",
+  "license": "MIT",
   "main": "index.js",
   "scripts": {
     "test": "nodemon index.js",
     "lint:js": "standard --verbose | snazzy",
     "lint:js-fix": "standard --verbose --fix | snazzy"
   },
-  "license": "MIT",
-  "author": "redacted",
   "dependencies": {
-    "discord.js": "^11.4.2",
-    "discord.js-commando": "^0.10.0"
+    "discord.js": "^11.4.2"
   },
   "devDependencies": {
     "snazzy": "^8.0.0",
