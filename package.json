@@ -11,7 +11,8 @@
     "lint:js-fix": "standard --verbose --fix | snazzy"
   },
   "dependencies": {
-    "discord.js": "^11.4.2"
+    "discord.js": "github:hydrabolt/discord.js",
+    "sqlite": "^3.0.0"
   },
   "devDependencies": {
     "snazzy": "^8.0.0",
