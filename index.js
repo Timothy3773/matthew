@@ -10,9 +10,12 @@
     console.log('I am ready!')
   })
 
-  client.on('message', message => {
+  client.on('message', async message => {
     if (message.author.bot) return
-    if (message.content.toLowerCase() === 'ping') message.channel.send('Pong!')
+    if (message.channel.name !== config.countChannelName) return
+    if (message.content.toLowerCase() === 'ping') return message.channel.send('Pong!')
+    await db.run('CREATE TABLE IF NOT EXISTS userCount (userID INTEGER PRIMARY KEY, count INTEGER)')
+    // var userCount = await db.run('SELECT userID, count FROM userCount')
   })
 
   client.login(config.token)
